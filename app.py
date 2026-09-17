@@ -12,7 +12,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 # مسار لجلب وعرض الشعار logo.jpg
 @app.route('/logo.jpg')
 def serve_logo():
-    return send_from_directory('.', 'logo.jpg')
+    return send_from_directory('static', 'logo.jpg')
 
 # 1. الصفحة الرئيسية (اختيار السداسي الدراسي)
 @app.route('/')
